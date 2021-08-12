@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <title>TO-DO LIST com Angular js</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <header>
+                <h2>TO-DO LIST</h2>
+            </header>
+            <div class="list" ng-app="myShoppingList" ng-controller="myCtrl">
+                <ul>
+                    <li ng-repeat="x in products">
+                        {{x}}
+                        <button ng-click="removerItem($index)">Remover</button>
+                    </li>
+                </ul>
+                <input placeholder="Seu item" ng-model="item"/>
+                <button class="ripple" ng-click="addItem()">add</button>
+                <p>{{errotext}}</p>
+            </div>
+        </div>
+    </section>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -19,7 +19,7 @@
 ## 🎁 Considerações finais
 
 * Aprendendo a usar Angular JS basico!! 
-* Aprendi muito com esse projeto, sempre buscando evolução cada dia mais!! 📢
+* Aprendi muito com esse projeto, sempre buscando evolução cada dia mais📢
 
 
 ---
